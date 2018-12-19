@@ -1,0 +1,10 @@
+%¼¤»îgprMax
+cd gprMax
+conda activate gprMax
+
+
+
+%----------- more traces 200traces--------------------
+python -m gprMax xb_models/bre4_v3_200.in -n 200
+python -m tools.outputfiles_merge xb_models/bre4_v3_200 --remove-files
+python -m tools.plot_Bscan xb_models/bre4_v3_200_merged.out Ez 
