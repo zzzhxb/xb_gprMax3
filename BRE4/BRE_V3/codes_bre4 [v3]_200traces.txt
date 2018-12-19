@@ -1,4 +1,4 @@
-%Â¼Â¤Â»Ã®gprMax
+%-------------¼¤»îgprMax-----------------------------
 cd gprMax
 conda activate gprMax
 
