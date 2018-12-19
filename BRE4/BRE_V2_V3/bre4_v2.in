@@ -1,0 +1,36 @@
+#medium: 6.0 0.0 0.0 0.005 1.0 0.0 concrete
+#medium: 20.0 0.0 0.0 0.1 1.0 0.0 wet_sand
+---------------------------------------------------------------------
+#domain: 2.5 0.2
+#dx_dy: 0.0025 0.0025
+#time_window: 12e-9
+---------------------------------------------------------------------
+#box: 0.0 0.0 2.5 0.15 wet_sand 
+#cylinder: 0.15 0.1  0.0125 pec
+#cylinder: 0.35 0.075 0.0125 pec
+#cylinder: 0.55 0.07 0.0125 pec 
+#cylinder: 0.75 0.05 0.0125 pec 
+#cylinder: 0.95 0.1 0.0375 free_space
+#cylinder: 1.15 0.075 0.0375 free_space
+#cylinder: 1.35 0.07 0.0375 free_space
+#cylinder: 1.55 0.05 0.0375 free_space 
+#cylinder: 1.75 0.1 0.005 pec 
+#cylinder: 1.95 0.075 0.005 pec
+#cylinder: 2.15 0.07 0.005 pec
+#cylinder: 2.35 0.05 0.005 pec
+-------------------------------------------------------------
+#line_source: 1.0 900e6 ricker MyLineSource
+-------------------------------------------------------------
+#analysis: 115 bre4.out b
+#tx: 0.0875 0.1525 MyLineSource 0.0 12e-9
+#rx: 0.1125 0.1525
+#tx_steps: 0.02 0.0
+#rx_steps: 0.02 0.0
+#end_analysis: 
+------------------------------------------------------------
+#geometry_file: bre4.geo
+#title: BRE Model 4
+#messages: y
+
+
+
